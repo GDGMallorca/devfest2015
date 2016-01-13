@@ -131,9 +131,17 @@ $(document).ready(function(){
 
 	});
 
+	// Custom Navigation Events
+	$(".next").on('click',function(){
+		owl.trigger('owl.next');
+	})
+	$(".prev").on('click',function(){
+		owl.trigger('owl.prev');
+	});
+
 	// Testimonials
-	var owl = $("#owl-faqs");
-	owl.owlCarousel({
+	var owlfaqs = $("#owl-faqs");
+	owlfaqs.owlCarousel({
 
 		items: 2,
 		itemsDesktop: [1199,2],
@@ -148,11 +156,11 @@ $(document).ready(function(){
 	});
 
 	// Custom Navigation Events
-	$(".next").on('click',function(){
-		owl.trigger('owl.next');
+	$(".nextfaqs").on('click',function(){
+		owlfaqs.trigger('owl.next');
 	})
-	$(".prev").on('click',function(){
-		owl.trigger('owl.prev');
+	$(".prevfaqs").on('click',function(){
+		owlfaqs.trigger('owl.prev');
 	});
 
 
