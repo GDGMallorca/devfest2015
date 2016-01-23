@@ -1281,6 +1281,10 @@ blockquote > p {
   font-size: 14px;
 }
 
+.entry-content img {
+  padding: 10px;
+}
+
 .entry-content .entry-tags a {
   font-style: italic;
   color: #9e9e9e;
